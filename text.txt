@@ -1,0 +1,16 @@
+PX (pixels)
+Evite utilizar px sempre que possível em elementos que afetam a acessibilidade, como tamanhos de fonte ou containers principais. Essa unidade define valores fixos que não se adaptam às preferências do usuário.
+Use px apenas para detalhes visuais que não necessitam de escalonamento, como bordas, sombras, cantos arredondados ou em alguns casos específicos de margens e espaçamentos internos (padding) onde a precisão é essencial.
+
+EM (relativo ao elemento)
+A unidade em é ideal quando você deseja que um tamanho seja relativo à fonte do próprio elemento. Ela permite que dimensões cresçam ou diminuam proporcionalmente ao tamanho da fonte local.
+Pode ser utilizada em propriedades como margin, padding, width e height, quando o objetivo é manter uma relação dinâmica com o tamanho do texto. Contudo, para definir tamanhos de fonte, geralmente é mais recomendável o uso de rem para garantir consistência global.
+
+REM (relativo ao elemento raiz)
+A unidade rem cria uma escala consistente em toda a aplicação, pois é relativa ao tamanho de fonte definido no elemento raiz (html). Assim, se o usuário aumentar o tamanho da fonte do navegador, toda a interface será redimensionada de forma proporcional.
+É a unidade preferida para tamanhos de fonte, espaçamentos e layouts responsivos, promovendo melhor acessibilidade e manutenção do código.
+
+% (porcentagem)
+A unidade de percentagem é sempre relativa ao elemento pai, o que exige atenção especial. É comumente usada para definir larguras (width) em layouts fluidos, permitindo que os elementos se ajustem dinamicamente ao tamanho do contêiner.
+Evite utilizá-la em margin e padding com valores elevados (acima de 5%), pois pode gerar comportamentos inesperados.
+Embora também possa ser usada em height e font-size, essas aplicações são menos comuns e exigem testes cuidadosos.
