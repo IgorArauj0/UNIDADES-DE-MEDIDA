@@ -7,6 +7,12 @@
 
 /* Sempre que quisermos trabalhar com caixas(div) relativas e responsivas é indicado saber a utilização da %. Header/Section/Footer OU até em imagens */
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
 
 .container {
     background-color: #273142;

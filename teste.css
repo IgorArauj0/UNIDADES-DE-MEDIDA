@@ -1,0 +1,56 @@
+/* Define a base global de configuração*/
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+    margin: 0; /*zerando margin do HTML*/
+    padding: 0; /*zerando preenchimento do HTML deixando sem espaçamento em volta*/
+}
+
+.cabecalho {
+ background-color: #4a403d; /*cor de fundo do header*/
+text-align: center; /*alinhamento do texto*/
+padding: 2rem; /* 2rem = 32px    */
+
+position: sticky;
+left: 0;
+top: 0;
+z-index: 999;
+}
+
+.batman {
+    background-image: url(imagens/bridge-9620082_1280.jpg); /*inserindo img*/
+    background-position: center; /*posicionamento da img*/
+    background-size: cover; /*preenchimento total da img*/
+    background-repeat: no-repeat; /*não repitir a img*/
+    background-attachment: fixed; /*posicionamento fixo da img*/
+    padding: 19rem; /*unidade de medida responsiva*/
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem; /*poderíamos usar 20px*/
+    padding: 2rem; /* = 32px */
+    flex-wrap: wrap; /*utilizado para quebra das caixas caso necessário*/
+}
+/* Aqui estamos alterando/estilizando as DIV */
+.caixa {
+    background-color: #a69a90;
+    color: white;
+    font-size: 1.2rem;
+    width: 25%; /*largura de todas as caixas em porcentagem*/
+    height: 25rem; /*a*/
+    box-shadow: 10px 10px 20px rgb(67, 60, 40);
+    border-radius: 10px;
+    min-width: 300px; /**evita que fique muito pequeno*/
+}
+
+.rodape {
+    background-color: #facf7d;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
