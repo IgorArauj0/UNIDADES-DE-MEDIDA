@@ -12,7 +12,7 @@
 /* Cabeçalho */
 .cabecalho {
   background-color: #0077b6;
-  color: rgb(4, 4, 4);
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 1.5rem; /* Usa rem para manter proporção */
 }

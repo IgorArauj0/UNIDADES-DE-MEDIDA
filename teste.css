@@ -2,55 +2,208 @@
 
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-   
-    margin: 0; /*zerando margin do HTML*/
-    padding: 0; /*zerando preenchimento do HTML deixando sem espaçamento em volta*/
+
+    margin: 0;
+    /*zerando margin do HTML*/
+    padding: 0;
+    /*zerando preenchimento do HTML deixando sem espaçamento em volta*/
+}
+
+body {
+    background-color: #080d0d;
 }
 
 .cabecalho {
- background-color: #4a403d; /*cor de fundo do header*/
-text-align: center; /*alinhamento do texto*/
-padding: 2rem; /* 2rem = 32px    */
+    background-color: #080d0d;
+    /*cor de fundo do header*/
+    text-align: center;
+    /*alinhamento do texto*/
+    padding: 2rem;
+    /* 2rem = 32px    */
+    color: white;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 999;
 
-position: sticky;
-left: 0;
-top: 0;
-z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
+.icon img {
+    width: 17%;
+}
+
+
 .batman {
-    background-image: url(imagens/bridge-9620082_1280.jpg); /*inserindo img*/
-    background-position: center; /*posicionamento da img*/
-    background-size: cover; /*preenchimento total da img*/
-    background-repeat: no-repeat; /*não repitir a img*/
-    background-attachment: fixed; /*posicionamento fixo da img*/
-    padding: 19rem; /*unidade de medida responsiva*/
+    background-image: url(imagens/bridge-9620082_1280.jpg);
+    /*inserindo img*/
+    background-position: center;
+    /*posicionamento da img*/
+    background-size: cover;
+    /*preenchimento total da img*/
+    background-repeat: no-repeat;
+    /*não repitir a img*/
+    background-attachment: fixed;
+    /*posicionamento fixo da img*/
+    padding: 15rem;
+    /*unidade de medida responsiva*/
 }
 
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem; /*poderíamos usar 20px*/
-    padding: 2rem; /* = 32px */
-    flex-wrap: wrap; /*utilizado para quebra das caixas caso necessário*/
+    gap: 1.5rem;
+    /*poderíamos usar 20px*/
+    padding: 8rem;
+    /* = 32px */
+    flex-wrap: wrap;
+    /*utilizado para quebra das caixas caso necessário*/
 }
+
 /* Aqui estamos alterando/estilizando as DIV */
 .caixa {
-    background-color: #a69a90;
+    background-color: #648285;
     color: white;
     font-size: 1.2rem;
-    width: 25%; /*largura de todas as caixas em porcentagem*/
-    height: 25rem; /*a*/
-    box-shadow: 10px 10px 20px rgb(67, 60, 40);
+    width: 25%;
+    /*largura de todas as caixas em porcentagem*/
+    height: 23rem;
+    /*a*/
+    box-shadow: 10px 10px 20px rgb(113, 113, 113);
     border-radius: 10px;
-    min-width: 300px; /**evita que fique muito pequeno*/
+    min-width: 300px;
+    /**evita que fique muito pequeno*/
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.caixa:hover {
+    box-shadow: 12px 12px 22px rgb(56, 55, 55);
+    border-radius: 15px;
+}
+
+
+.div-robben {
+    background-color: #181818;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: column;
+    padding: 0 1rem;
+    height: 15rem;
+    /*a*/
+}
+
+.div-robben i {
+    color: white;
+    font-size: 2em;
+}
+
+.div-robben p {
+    font-size: 1.1rem;
+
+}
+
+.button-div-robben button {
+    padding: 0.5rem;
+    background-color: #700357;
+    color: white;
+    border: none;
+    margin-left: 10px;
+
+}
+
+
+.button-div-robben p {
+    font-size: 0.9rem;
+
+}
+
+.button-div-robben {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+
+}
+
+.social-media {
+    padding: 1.5rem;
+}
+
+.social-media i {
+    font-size: 2em;
+    color: white;
+    transition: 0.8s;
+    margin: 0.5em;
+}
+
+.social-media i:hover {
+    font-size: 2.1em;
+    color: rgba(255, 255, 255, 0.46);
+}
+
+.line {
+    width: 60%;
+    margin: 0.5em auto;
+}
+
+.line-strong {
+    margin: 2rem auto;
+    width: 70%;
+}
+
+.div-list ul li {
+    list-style: none;
+    margin-top: 1em;
+}
+
+.div-list ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.8s;
+}
+
+.div-list ul li a:hover {
+    color: rgba(255, 255, 255, 0.552);
+
 }
 
 .rodape {
-    background-color: #facf7d;
+    background-color: #2c2a25;
     color: black;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
     font-size: 1.1rem;
+}
+
+
+
+.img-div {
+    /* Aqui chamamos nossa Class para alteração*/
+    padding: 2%;
+    /* Cuida do Preenchimento */
+    background-image: url(imagens/leather-1251778_1280.jpg);
+    /* Usada para inserir imagens de fundo */
+    background-position: center;
+    /* Aqui posicionamos nossa imagem para o centro */
+    background-size: auto;
+    /* Background-Size: especifica o tamanho das imagens de fundo. Auto: Responsável por preencher totalmente a imagem. */
 }
