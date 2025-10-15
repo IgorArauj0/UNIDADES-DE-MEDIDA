@@ -163,11 +163,13 @@ body {
 .line {
     width: 60%;
     margin: 0.5em auto;
+    
 }
 
 .line-strong {
     margin: 2rem auto;
     width: 70%;
+    
 }
 
 .div-list ul li {
@@ -177,7 +179,7 @@ body {
 
 .div-list ul li a {
     text-decoration: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.407);
     transition: 0.8s;
 }
 
@@ -187,11 +189,11 @@ body {
 }
 
 .rodape {
-    background-color: #2c2a25;
-    color: black;
+    background-color: #000000b5;
+    color: rgba(0, 0, 0, 0.308);
     text-align: center;
     padding: 2rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 

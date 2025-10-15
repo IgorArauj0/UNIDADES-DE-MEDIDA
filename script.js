@@ -2,7 +2,7 @@ window.revelar = ScrollReveal({reset:true});
 
 
 revelar.reveal('.caixa', {
-    duration: 1800,
-    distance: '70px'
+    duration: 1100,
+    distance: '10px'
 });
 
