@@ -38,19 +38,73 @@ body {
 
 
 .batman {
-    background-image: url(imagens/bridge-9620082_1280.jpg);
-    /*inserindo img*/
-    background-position: center;
-    /*posicionamento da img*/
-    background-size: cover;
-    /*preenchimento total da img*/
-    background-repeat: no-repeat;
-    /*não repitir a img*/
-    background-attachment: fixed;
-    /*posicionamento fixo da img*/
-    padding: 15rem;
-    /*unidade de medida responsiva*/
+    /* background: #000000;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(8, 8, 8, 1) 50%, rgba(107, 100, 100, 1) 100%);
+     */
+   background-image: url(imagens/meeting-594091_1280.jpg);
+   background-size: cover;
+   background-position: top;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    /*poderíamos usar 20px*/
+    padding: 9rem;
+    /* = 32px */
+    flex-wrap: wrap;
+
 }
+
+span {
+    color: yellow;
+    font-weight: bold;
+    transition: 0.8s;
+}
+
+span:hover {
+    color: rgba(255, 255, 0, 0.439);
+}
+
+.div-batman-0{
+    background-color: rgba(128, 128, 128, 0.191);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+
+
+    font-size: 2rem;
+    width: 25%;
+    /*largura de todas as caixas em porcentagem*/
+    height: 23rem;
+    /*a*/
+    border: none;
+    min-width: 300px;
+    /**evita que fique muito pequeno*/
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.div-batman {
+    background-image: url(imagens/ai-generated-8795619_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    width: 25%;
+    /*largura de todas as caixas em porcentagem*/
+    height: 23rem;
+    /*a*/
+    border: none;
+    box-shadow: 2px 2px 7px white;
+    min-width: 300px;
+    /**evita que fique muito pequeno*/
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+
 
 .container {
     display: flex;
@@ -163,13 +217,13 @@ body {
 .line {
     width: 60%;
     margin: 0.5em auto;
-    
+
 }
 
 .line-strong {
     margin: 2rem auto;
     width: 70%;
-    
+
 }
 
 .div-list ul li {

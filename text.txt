@@ -14,3 +14,8 @@ A unidade rem cria uma escala consistente em toda a aplicação, pois é relativ
 A unidade de percentagem é sempre relativa ao elemento pai, o que exige atenção especial. É comumente usada para definir larguras (width) em layouts fluidos, permitindo que os elementos se ajustem dinamicamente ao tamanho do contêiner.
 Evite utilizá-la em margin e padding com valores elevados (acima de 5%), pois pode gerar comportamentos inesperados.
 Embora também possa ser usada em height e font-size, essas aplicações são menos comuns e exigem testes cuidadosos.
+
+
+
+
+CRIAR REPOSÍTÓRIO CHAMADO "JK FINANCE" CRIAR OS ARQUIVOS HTML, CSS e JS além da pasta de IMG
