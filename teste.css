@@ -2,7 +2,7 @@
 
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    box-sizing: border-box;
     margin: 0;
     /*zerando margin do HTML*/
     padding: 0;
@@ -28,22 +28,33 @@ body {
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
 }
 
 .icon img {
-    width: 17%;
+    width: 30%;
+
 }
+
+.btn-header button {
+    width: 5rem;
+    padding: 5px;
+    background-color: gray;
+    border: none;
+    color: white;
+    font-weight: 800;
+}
+
 
 
 .batman {
     /* background: #000000;
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(8, 8, 8, 1) 50%, rgba(107, 100, 100, 1) 100%);
      */
-   background-image: url(imagens/meeting-594091_1280.jpg);
-   background-size: cover;
-   background-position: top;
+    background-image: url(imagens/meeting-594091_1280.jpg);
+    background-size: cover;
+    background-position: top;
 
     display: flex;
     align-items: center;
@@ -66,7 +77,7 @@ span:hover {
     color: rgba(255, 255, 0, 0.439);
 }
 
-.div-batman-0{
+.div-batman-0 {
     background-color: rgba(128, 128, 128, 0.191);
     color: white;
     display: flex;
@@ -91,7 +102,7 @@ span:hover {
     background-image: url();
     background-size: cover;
     background-position: center;
-    
+
     width: 25%;
     /*largura de todas as caixas em porcentagem*/
     height: 23rem;

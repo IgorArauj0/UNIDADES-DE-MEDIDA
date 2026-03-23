@@ -1,9 +1,10 @@
 /* Define a base de medidas */
 * {
-  font-size: 16px; /* 1rem = 16px */
+  font-size: 16px;
+  /* 1rem = 16px */
   font-family: Arial, sans-serif;
-  margin: 0;
-  
+  box-sizing: border-box;
+
   margin: 0;
   padding: 0;
 }
@@ -14,24 +15,27 @@
   background-color: #0077b6;
   color: rgb(255, 255, 255);
   text-align: center;
-  padding: 1.5rem; /* Usa rem para manter proporção */
+  padding: 1.5rem;
+  /* Usa rem para manter proporção */
 }
 
 .batman {
-    padding: 20rem;
-    background-image: url(imagens/bridge-9620082_1280.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  padding: 20rem;
+  background-image: url(imagens/bridge-9620082_1280.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
 /* Container principal com Flexbox */
 .container {
   display: flex;
-  justify-content: space-evenly; /* Espaço igual entre os itens */
+  justify-content: space-evenly;
+  /* Espaço igual entre os itens */
   align-items: center;
-  flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+  flex-wrap: wrap;
+  /* Permite quebrar linha em telas menores */
   padding: 2rem;
   gap: 1.5rem;
 }
@@ -41,15 +45,17 @@
   background-color: #e819d7;
   color: #023e8a;
   font-size: 1.2rem;
-  width: 25%; /* Responsivo: ocupa 25% do espaço do container */
-  min-width: 300px; /* Evita que fique muito pequeno */
+  width: 25%;
+  /* Responsivo: ocupa 25% do espaço do container */
+  min-width: 300px;
+  /* Evita que fique muito pequeno */
   height: 20rem;
   border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 /* Rodapé */
@@ -64,7 +70,12 @@
 /* Ajuste para telas menores */
 @media (max-width: 600px) {
   .caixa {
-    width: 80%; /* Ajusta largura em telas pequenas */
+    width: 80%;
+    /* Ajusta largura em telas pequenas */
     font-size: 1rem;
+  }
+
+  .cabecalho {
+    padding: 0.8rem;
   }
 }
