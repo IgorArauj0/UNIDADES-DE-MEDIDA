@@ -1,0 +1,38 @@
+UNIDADES DE MEDIDAS RESPONSIVAS - RESUMO
+
+1.  "vh" (viewport height) Representa uma porcentagem da altura da tela do
+    usuário. Ex: 100vh = 100% da altura da tela. 
+    Quando usar:
+-   Seções em tela cheia
+-   Layouts que precisam ocupar toda a altura
+
+
+2.  "vw" (viewport width) Representa uma porcentagem da largura da tela do
+    usuário. Ex: 100vw = 100% da largura da tela. 
+    Quando usar:
+-   Elementos que devem ocupar toda a largura
+-   Ajustes proporcionais à largura da tela
+
+3.  "rem" (root em) Baseado no tamanho da fonte do elemento raiz (html).
+    Ex: 1rem = tamanho definido no html (geralmente 16px). Quando usar:
+-   Tipografia consistente
+-   Espaçamentos padronizados
+-   Projetos escaláveis
+
+4.  "em" Baseado no tamanho da fonte do elemento pai. Ex: se o pai tem
+    16px, então 1em = 16px. Quando usar:
+-   Componentes que precisam escalar com o contexto
+-   Elementos internos (botões, textos dentro de containers)
+
+5.  % (porcentagem) Relativo ao tamanho do elemento pai. Ex: width: 50%
+    ocupa metade do container. 
+    Quando usar:
+-   Layouts fluidos
+-   Divisões proporcionais dentro de containers
+
+RESUMO FINAL: - vh/vw → baseados na tela  
+rem → baseado no root (html) 
+em → baseado no elemento pai 
+% → baseado no container
+
+Dica geral: Use "rem" para consistência global, %, vh e vw para layout responsivo e "em" para ajustes internos.
