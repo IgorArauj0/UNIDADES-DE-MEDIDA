@@ -1,12 +1,76 @@
- * {
-    font-size: 16px;
- }
-
-body {
-    font-size: 32px;
+* {
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0;
+   /*espaçamento em volta zerado*/
+   padding: 0;
+   /*resetando preenchimento*/
+   box-sizing: border-box;
+   /* Evita que os elementos aumente de tamanho inesperadamente facilitando o controle da responsividade*/
 }
 
+/* estilização header */
+.cabecalho {
+   background-color: #171430;
+   /*cor de fundo*/
+   color: white;
+   padding: 1.5rem;
+   /*poderia ser 24px*/
+   /* alinhamento dos itens */
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-direction: row;
 
- h1 {
-    font-size: 1em;
- }
+   /* Header Fixo */
+   position: sticky;
+   /*posicionamento do header para sobrepor os outros elementos*/
+   left: 0;
+   top: 0;
+   z-index: 999;
+   /*eixo z - Profundidade do elemento*/
+}
+
+/* Logo do header */
+.div-logo img {
+   width: 35%;
+   /*usando o % para diminuir seu tamanho*/
+}
+
+/* estilização do botão header */
+.div-button a button {
+   width: 5rem; /*poderia ser 80 px*/
+   padding: 0.5rem; /*8px - preenchimento*/
+   background-color: #eff0d5;/*cor do botão*/
+   border: none; /*remoção das bordas*/
+   font-weight: 700; /*espessura da font do botão*/
+   border-radius: 5px; /*arredondamento da borda*/
+}
+/* estilização da section 01 */
+.section-01 {
+   padding: 10rem; /*preechimento interno da section*/
+   background-image: url(../imagens/back0.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 2rem; /*poderíamos usar 32px*/
+   flex-wrap: wrap; /*Isso significa que as div poderão quebrar de linha, caso necessário*/
+}
+
+.div01 {
+background-color: #c4d4ab7f; /*cor de fundo*/
+color: #171430;/*cor dos textos*/
+text-align: center; /*Alinhamento centralizado dos textos*/
+font-size: 2rem; /*tamanho da letra dentro da caixa*/
+padding: 1rem; /*preenchimento da caixa*/
+width: 25%;/*largura de caixa em porcentagem*/ 
+height: 20rem; /*altura da caixa utilizando o REM*/
+min-width: 299px;
+}
+
+.div02 {
+
+}
