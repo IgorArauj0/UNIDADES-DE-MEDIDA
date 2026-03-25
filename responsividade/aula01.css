@@ -6,6 +6,7 @@
    /*resetando preenchimento*/
    box-sizing: border-box;
    /* Evita que os elementos aumente de tamanho inesperadamente facilitando o controle da responsividade*/
+   list-style: none;
 }
 
 /* estilização header */
@@ -61,16 +62,52 @@
 }
 
 .div01 {
-background-color: #c4d4ab7f; /*cor de fundo*/
+background-color: #c4d4ab; /*cor de fundo*/
 color: #171430;/*cor dos textos*/
+font-weight: bold;
 text-align: center; /*Alinhamento centralizado dos textos*/
 font-size: 2rem; /*tamanho da letra dentro da caixa*/
 padding: 1rem; /*preenchimento da caixa*/
 width: 25%;/*largura de caixa em porcentagem*/ 
 height: 20rem; /*altura da caixa utilizando o REM*/
-min-width: 299px;
+min-width: 299px; /*Largura mínima da caixa 
+ela não ficará menor que 299px*/
+}
+
+.div01 p {
+   margin-top: 1rem;
 }
 
 .div02 {
+   padding: 1rem; /*preenchimento da caixa*/
+   width: 25%;/*largura de caixa em porcentagem*/ 
+   height: 20rem; /*altura da caixa utilizando o REM*/
+   min-width: 299px;
+   background: linear-gradient(180deg, #01021064 8.33%, rgba(7, 15, 28, 0.745) 100%), url(../imagens/bank2.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 15px;
+}
+/* Aqui estamos estilizando as listas */
+.ul-div01 li a {
+ text-decoration: none;
+ background-color: #171430;
+ color: white;
+ padding: 5px;
+ font-size: 1.2rem;
+ border-radius: 5px; /*arredondamento da borda*/
+}
 
+.ul-div01 li {
+   margin: 5px 5px; /*alterando os 4 lados externos dos elementos, primeiro valor (superior,inferior) e segundo valor (laterais esquerda e direita)*/
+}
+
+.fa-piggy-bank, .fa-money-bill {
+   color: white;
+   font-size: 1.3rem;
 }
