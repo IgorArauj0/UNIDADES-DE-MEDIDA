@@ -48,7 +48,7 @@
 }
 /* estilização da section 01 */
 .section-01 {
-   padding: 10rem; /*preechimento interno da section*/
+   padding: 5rem; /*preechimento interno da section*/
    background-image: url(../imagens/back0.jpg);
    background-position: center;
    background-size: cover;
