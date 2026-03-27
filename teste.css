@@ -16,8 +16,7 @@ body {
 .cabecalho {
     background-color: #080d0d;
     /*cor de fundo do header*/
-    text-align: center;
-    /*alinhamento do texto*/
+    
     padding: 2rem;
     /* 2rem = 32px    */
     color: white;
@@ -265,11 +264,11 @@ span:hover {
 
 .img-div {
     /* Aqui chamamos nossa Class para alteração*/
-    padding: 2%;
+    padding: 4%;
     /* Cuida do Preenchimento */
     background-image: url(imagens/leather-1251778_1280.jpg);
     /* Usada para inserir imagens de fundo */
-    background-position: center;
+    background-position: bottom;
     /* Aqui posicionamos nossa imagem para o centro */
     background-size: auto;
     /* Background-Size: especifica o tamanho das imagens de fundo. Auto: Responsável por preencher totalmente a imagem. */

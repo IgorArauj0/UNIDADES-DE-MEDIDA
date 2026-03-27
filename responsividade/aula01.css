@@ -55,8 +55,8 @@
    background-repeat: no-repeat;
 
    display: flex;
-   align-items: center;
-   justify-content: center;
+   align-items: center;/*alinhamento vertical*/
+   justify-content: center; /*Alinhamento horizontal*/
    gap: 2rem; /*poderíamos usar 32px*/
    flex-wrap: wrap; /*Isso significa que as div poderão quebrar de linha, caso necessário*/
 }
@@ -64,7 +64,7 @@
 .div01 {
 background-color: #c4d4ab; /*cor de fundo*/
 color: #171430;/*cor dos textos*/
-font-weight: bold;
+font-weight: bold; /*peso da fonte*/
 text-align: center; /*Alinhamento centralizado dos textos*/
 font-size: 2rem; /*tamanho da letra dentro da caixa*/
 padding: 1rem; /*preenchimento da caixa*/
@@ -78,21 +78,6 @@ ela não ficará menor que 299px*/
    margin-top: 1rem;
 }
 
-.div02 {
-   padding: 1rem; /*preenchimento da caixa*/
-   width: 25%;/*largura de caixa em porcentagem*/ 
-   height: 20rem; /*altura da caixa utilizando o REM*/
-   min-width: 299px;
-   background: linear-gradient(180deg, #01021064 8.33%, rgba(7, 15, 28, 0.745) 100%), url(../imagens/bank2.jpg);
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
-   gap: 15px;
-}
 /* Aqui estamos estilizando as listas */
 .ul-div01 li a {
  text-decoration: none;
@@ -107,7 +92,74 @@ ela não ficará menor que 299px*/
    margin: 5px 5px; /*alterando os 4 lados externos dos elementos, primeiro valor (superior,inferior) e segundo valor (laterais esquerda e direita)*/
 }
 
+
+.div02 {
+   padding: 1rem; /*preenchimento da caixa*/
+   width: 25%;/*largura de caixa em porcentagem*/ 
+   height: 20rem; /*altura da caixa utilizando o REM*/
+   min-width: 299px; /*Largura mínima da caixa*/
+   background: linear-gradient(180deg, #01021064 8.33%, rgba(7, 15, 28, 0.745) 100%), url(../imagens/bank2.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   display: flex; /*alinhamento dos icons*/
+   align-items: center; /*alinhamento vertical*/
+   justify-content: center; /*alinhamento horizontal*/
+   flex-direction: column; /*direção das caixas*/
+   gap: 15px; /*Espaço entre as caixas*/
+}
+
+
 .fa-piggy-bank, .fa-money-bill {
    color: white;
    font-size: 1.3rem;
+}
+/* Aqui estamos estilizando a tarja em destaque entre as sections */
+.img-div {
+   padding: 3%; /*preenchimento interno*/
+   background-image: url(../imagens/papel.jpg);/*caminho da img*/
+   background-position: center; /*posicionamento da img*/
+   background-size: cover;/*preenchimento total da img na caixa*/
+}
+/* Estilizando a segunda section */
+.section-02 {
+   display: flex; /*tornando flex/lado a lado*/
+   justify-content: center; /*alinhamento horizontal*/
+   align-items: center; /*Alinhamento vertical*/
+   gap: 1.5rem; /*brecha entre as caixas*/
+   padding: 5rem; /*preenchimento interno */
+   background-color: #171430; /*Cor de fundo*/
+   flex-wrap: wrap; /*CASO NECESSÁRIO VOCÊ PODERÁ QUEBRAR*/
+}
+
+/* estilização das 3 div sec 2 */
+.caixa {
+   width: 25%; /*Largura da caixa*/
+   height: 22rem; /*altura da caixa*/
+   background-color: #c4d4ab; /*cor de fundo*/
+   min-width: 299px; /*largura mínima da div*/
+   font-size: 1.2rem; /*Tamanho das letras*/
+   color: white; /*cor dos textos*/
+   box-shadow: 10px 10px 20px rgba(245, 222, 179, 0.354); /*sombra externa das caixas*/
+   cursor: pointer; /* ativando cursor pointer */
+}
+
+.caixa:hover{
+   box-shadow: 12px 12px 22px rgba(245, 222, 179, 0.557); /*sombra externa das caixas*/
+   transition: 0.8s;
+}
+
+/* estilização da section 03 */
+.section-03 {
+   display: flex; /*tornando flex/lado a lado*/
+   justify-content: center; /*alinhamento horizontal*/
+   align-items: center; /*Alinhamento vertical*/
+   gap: 1.5rem; /*brecha entre as caixas*/
+   padding: 5rem; /*preenchimento interno */
+   background-color: #171430; /*Cor de fundo*/
+   flex-wrap: wrap; /*CASO NECESSÁRIO VOCÊ PODERÁ QUEBRAR*/
+}
+/* Chamando as classes primárias para estilização */
+.div03, .div04 {
+   height: 15rem; /*altura das caixas*/
 }
