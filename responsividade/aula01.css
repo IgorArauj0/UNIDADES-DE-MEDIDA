@@ -160,6 +160,35 @@ ela não ficará menor que 299px*/
    flex-wrap: wrap; /*CASO NECESSÁRIO VOCÊ PODERÁ QUEBRAR*/
 }
 /* Chamando as classes primárias para estilização */
-.div03, .div04 {
+ .div03, .div04 {
    height: 15rem; /*altura das caixas*/
+   padding: 1rem; /*preenchimento interno*/
+   text-align: center;
+} 
+/* Estilização dos textos da primeira caixa */
+.content-text {
+   text-align: start; /*Alinhando os textos ao início*/
+   margin: 1rem; /*espaçamento em torno da caixa*/
+   color: #171430; /*cor dos textos*/
+   font-weight: 500; /*peso da font*/
+}
+/* Acessando os icons para estilização */
+.icon-div03 i {
+   color: #171430; /*cores dos icon*/
+   font-size: 2.8rem; /*tamanho dos icon*/
+   margin-top: 1.2rem; /*Espaçamento superior dos icon*/
+}
+
+
+/* inicio formatação caixa 02 section 03 */
+.button-div04 a button {
+   padding: 0.5rem; /*preenchimento interno button*/
+   background-color: #171430; /*cor de fundo*/
+   color: white; /*cor do text*/
+   font-weight: 600; /*peso da font*/
+   margin: 1rem 0; /*espaçamento sup/inf 1rem, e 0 nas laterais */
+}
+
+.text-div04 p {
+   color: #171430;
 }
