@@ -122,7 +122,7 @@ ela não ficará menor que 299px*/
    background-size: cover;/*preenchimento total da img na caixa*/
 }
 /* Estilizando a segunda section */
-.section-02 {
+.section-02, .section-04 {
    display: flex; /*tornando flex/lado a lado*/
    justify-content: center; /*alinhamento horizontal*/
    align-items: center; /*Alinhamento vertical*/
@@ -191,4 +191,8 @@ ela não ficará menor que 299px*/
 
 .text-div04 p {
    color: #171430;
+}
+
+.batata {
+   background-color: #4642af;
 }
