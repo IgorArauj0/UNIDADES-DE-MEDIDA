@@ -157,6 +157,26 @@ ela não ficará menor que 299px*/
    height: 50%;
 }
 
+.caixa p {
+   margin: 0.5rem 1rem;
+   color: #06041b;
+}
+
+.caixa h3 {
+   color: #06041b;
+   font-weight: 700;
+   margin-left: 1rem;
+}
+
+.caixa button {
+   background-color: #06041b;
+   color: white;
+   padding: 7px;
+   width: 5rem;
+   border: none;
+   margin-left: 1rem;
+}
+
 /* estilização da section 03 */
 .section-03 {
    display: flex; /*tornando flex/lado a lado*/
