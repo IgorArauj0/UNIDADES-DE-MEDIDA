@@ -152,23 +152,23 @@ ela não ficará menor que 299px*/
 }
 
 
-.caixa img {
+.caixa-card img {
    width: 100%;
-   height: 50%;
+   height: 45%;
 }
 
-.caixa p {
+.caixa-card p {
    margin: 0.5rem 1rem;
    color: #06041b;
 }
 
-.caixa h3 {
+.caixa-card h3 {
    color: #06041b;
    font-weight: 700;
    margin-left: 1rem;
 }
 
-.caixa button {
+.caixa-card button {
    background-color: #06041b;
    color: white;
    padding: 7px;
