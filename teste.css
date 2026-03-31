@@ -196,8 +196,31 @@ span:hover {
     gap: 30px;
 }
 
+.img-div {
+    /* Aqui chamamos nossa Class para alteração*/
+    padding: 4%;
+    /* Cuida do Preenchimento */
+    background-image: url(imagens/leather-1251778_1280.jpg);
+    /* Usada para inserir imagens de fundo */
+    background-position: bottom;
+    /* Aqui posicionamos nossa imagem para o centro */
+    background-size: auto;
+    /* Background-Size: especifica o tamanho das imagens de fundo. Auto: Responsável por preencher totalmente a imagem. */
+}
 
 
+
+
+
+
+
+.rodape {
+    background-color: #000000b5;
+    color: rgba(0, 0, 0, 0.308);
+    text-align: center;
+    padding: 2rem;
+    font-size: 1rem;
+}
 
 .content {
     display: flex;
@@ -205,7 +228,6 @@ span:hover {
     justify-content: center;
     gap: 3rem;
     flex-wrap: wrap;
-
 }
 
 .social-media {
@@ -252,24 +274,4 @@ span:hover {
 
 }
 
-.rodape {
-    background-color: #000000b5;
-    color: rgba(0, 0, 0, 0.308);
-    text-align: center;
-    padding: 2rem;
-    font-size: 1rem;
-}
 
-
-
-.img-div {
-    /* Aqui chamamos nossa Class para alteração*/
-    padding: 4%;
-    /* Cuida do Preenchimento */
-    background-image: url(imagens/leather-1251778_1280.jpg);
-    /* Usada para inserir imagens de fundo */
-    background-position: bottom;
-    /* Aqui posicionamos nossa imagem para o centro */
-    background-size: auto;
-    /* Background-Size: especifica o tamanho das imagens de fundo. Auto: Responsável por preencher totalmente a imagem. */
-}
