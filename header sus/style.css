@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -15,6 +16,10 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+}
+
+.batata {
+
 }
 
 .hero {
