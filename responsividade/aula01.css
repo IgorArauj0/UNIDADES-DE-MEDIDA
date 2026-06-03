@@ -223,6 +223,13 @@ ela não ficará menor que 299px*/
 
 .batata {
    background-color: #4642af;
+   height: 15rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 2rem;
+   align-items: center;
+   text-align: center;
 }
 
 
