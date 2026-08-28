@@ -1,47 +1,135 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Faça seu Login</title>
+
   <link rel="stylesheet" href="form.css">
+
+  <!--
+    O type="module" é necessário porque o nosso script.js
+    utilizará os módulos do Firebase.
+  -->
+  <script type="module" src="script.js"></script>
 </head>
 
 <body>
+
   <main>
+
     <div class="container">
+
       <h2>Login</h2>
 
-    <form action="#">
-      
-      <div class="input-group">
-        <label for="email">Login</label>
-        <input type="text" id="email" placeholder="Digite seu login" required>
-      </div>
+      <!--
+        Formulário utilizado para realizar o login.
 
-         <div class="input-group">
-           <label for="senha">Senha</label>
-           <input type="password" placeholder="Digite sua senha" required>
-         </div>
+        O JavaScript irá localizar este formulário através
+        do id="formulario".
+      -->
+      <form action="#" id="formulario">
 
-         <div class="links">
-            <a href="passw.html">Esqueci minha senha</a>
-            <a href="cadastro.html">Não tenho cadastro</a>
-         </div>
+        <div class="input-group">
 
-         <input type="submit" class="btn" value="Entrar">
-         
+          <label for="email">Login</label>
+
+          <!--
+            Como o Firebase Authentication utilizará e-mail
+            e senha, usamos type="email".
+          -->
+          <input
+            type="email"
+            id="email"
+            placeholder="Digite seu e-mail"
+            required
+          >
+
+        </div>
+
+
+        <div class="input-group">
+
+          <!--
+            O "for" precisa corresponder ao id do input.
+          -->
+          <label for="password">Senha</label>
+
+          <input
+            type="password"
+            id="password"
+            placeholder="Digite sua senha"
+            required
+          >
+
+        </div>
+
+
+        <div class="links">
+
+          <a href="passw.html">
+            Esqueci minha senha
+          </a>
+
+          <a href="cadastro.html">
+            Não tenho cadastro
+          </a>
+
+        </div>
+
+
+        <!--
+          Botão responsável por enviar o formulário
+          e iniciar o processo de autenticação.
+        -->
+        <input
+          type="submit"
+          class="btn"
+          value="Entrar"
+        >
+
       </form>
 
-      <button class="google-btn">
-            <img src="google.png" alt="Icon Google">
-            Entrar com Google
+
+      <!--
+        Área onde o JavaScript poderá apresentar mensagens
+        de sucesso ou erro.
+      -->
+      <p id="mensagem"></p>
+
+
+      <!--
+        Botão de login com Google.
+
+        O type="button" impede que ele envie o formulário
+        de login por acidente.
+
+        A integração com o Google será feita posteriormente
+        no script.js utilizando o Firebase Authentication.
+      -->
+      <button
+        type="button"
+        class="google-btn"
+        id="googleLogin"
+      >
+
+        <img
+          src="google.png"
+          alt="Ícone do Google"
+        >
+
+        Entrar com Google
+
       </button>
 
-
     </div>
+
   </main>
+
 </body>
 
 </html>
+```
